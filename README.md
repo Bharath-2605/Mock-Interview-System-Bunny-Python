@@ -18,15 +18,15 @@
 ## Preview
 ### Desktop version
 #### Landing Page
-![image](https://github.com/Bharath-2605/Mock-Interview-System-Bunny-Python/assets/127648939/1.png)
+![image](assets/1.png)
 #### Job-Title Input
-![image](https://github.com/Bharath-2605/Mock-Interview-System-Bunny-Python/assets/127648939/2.png)
+![image](assets/2.png)
 
 #### Interview Page
-![image](https://github.com/Bharath-2605/Mock-Interview-System-Bunny-Python/assets/127648939/3.png)
+![image](assets/3.png)
 
 #### Review Page
-![image](https://github.com/Bharath-2605/Mock-Interview-System-Bunny-Python/assets/127648939/4.png)
+![image](assets/4.png)
 
 ### Mobile Version
-<img src="https://github.com/Bharath-2605/Mock-Interview-System-Bunny-Python/assets/127648939/5.png" alt="Image Alt Text" style="width:300px;" />
+<img src="assets/5.png" alt="Image Alt Text" style="width:300px;" />
