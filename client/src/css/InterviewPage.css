@@ -1,0 +1,368 @@
+.Main-interview-div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.interview-div {
+  height: 100%;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 3px solid #edc215;
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensure padding is included in height */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255,255,255,0.8);
+}
+
+.questionDisplay-div {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+}
+.videoDisplay-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 35%;
+}
+
+.answerDisplay-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the start */
+  flex-direction: column;
+  height: 25%;
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  overflow-y: scroll; /* Ensure content does not overflow */
+  box-sizing: border-box;
+}
+.answerDisplay-div::-webkit-scrollbar {
+  width: 8px;
+}
+
+.answerDisplay-div::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 5px;
+}
+
+.questionNumber-div,
+.buttonDisplay-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.question-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.question-div p,
+.answer-transcript,
+.placeholder-div {
+  font-size: calc(0.65vw + 0.65vh); 
+  font-weight: 420;
+}
+
+.buttonDisplay-div {
+  height: 10%;
+  padding-top: 5px;
+}
+
+.placeholder-div{
+  color: grey;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 10%;
+}
+
+.answer-transcript {
+  text-align: left; /* Align transcript text to the left */
+  color: #000; /* Black text color */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.numberIcon {
+  color: gray;
+  transition: color 0.5s ease-in-out;
+  font-size: 20px;
+}
+
+.numberIcon.skipped {
+  color: red;
+}
+
+.numberIcon.active {
+  color: blue;
+}
+
+.numberIcon.next {
+  color: green;
+}
+.line-div {
+  flex: 1;
+  height: 2px; /* Adjust line height as needed */
+  background-color: gray; /* Adjust line color as needed */
+  margin: 0 5px; /* Adjust margin between lines as needed */
+}
+
+.Number1-div,
+.Number2-div,
+.Number3-div,
+.Number4-div,
+.Number5-div {
+  position: relative;
+}
+
+.SubmitButton,
+.skipButton,
+.nextButton,
+.Re-recordAnswerButton,
+.stopButton {
+  width: 23%; /* Adjust width to fit better */
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  position: relative;
+  margin-top: 10px; /* Reduce top margin */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skipButton {
+  border:3px solid #edc215;
+  transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.skipButton:hover{
+  background-color: #edc215;
+  box-shadow: 0px 1px 10px #EDC215;
+  
+}
+
+.SubmitButton {
+  border:3px solid #edc215;
+  transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  display: none;
+}
+.SubmitButton:hover{
+  background-color: #edc215;
+  box-shadow: 0px 1px 10px #EDC215;
+}
+
+.Re-recordAnswerButton {
+  border:3px solid green;
+  transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.Re-recordAnswerButton:hover{
+  background-color: green;
+  color: white;
+  box-shadow: 0px 1px 10px green;
+}
+
+.nextButton {
+  border:3px solid rgb(59, 59, 239);
+  transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.nextButton:hover{
+  background-color: rgb(59, 59, 239);
+  color: white;
+  box-shadow: 0px 1px 10px rgb(59, 59, 239);
+}
+
+.stopButton {
+  border:3px solid rgb(231, 3, 3);
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.stopButton:hover{
+  background-color: rgb(231, 3, 3);
+  color: white;
+  box-shadow: 0px 1px 10px rgb(231, 3, 3);
+}
+
+
+
+.iconContainer-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.icon {
+  font-size: 70px;
+  color: #000000;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: #000;
+  border-radius: 10px;
+}
+
+
+.hidden1 {
+  display: none;
+  transform: translateY(-20px); /* Optional slide-up effect */
+}
+
+.display {
+  display: block;
+}
+
+.responsiveBtnTxt {
+  font-size: calc(0.65vw + 0.65vh);
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width:1650px) {
+  .question-div p,
+  .answer-transcript,
+  .placeholder-div {
+    font-size: calc(0.8vw + 0.8vh); 
+  }
+}
+@media (max-width:1000px) {
+  .question-div p,
+  .answer-transcript,
+  .placeholder-div {
+    font-size: calc(1vw + 1vh); 
+  }
+}
+@media (max-width: 768px) {
+  .interview-div{
+    width:100%;
+  }
+  .videoDisplay-div,
+  .questionDisplay-div,
+  .answerDisplay-div,
+  .questionNumber-div,
+  .buttonDisplay-div {
+    width: 100%; /* Decrease width for smaller screens */
+    max-width: none; /* Remove max width constraint */
+  }
+
+  .answerDisplay-div {
+    height: auto;
+    overflow-y:visible; /* Allow height to adjust */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .question-div p,
+  .answer-transcript,
+  .placeholder-div {
+    font-size: calc(1.2vw + 1.2vh); 
+  }
+
+  .buttonDisplay-div {
+    flex-direction: row; /* Keep buttons in a row */
+    align-items: center;
+    height: 10vh; /* Allow height to adjust */
+    padding-top: 10px; /* Increase padding for space */
+    justify-content: space-around; /* Add space around buttons */
+  }
+
+  .SubmitButton,
+  .skipButton,
+  .nextButton,
+  .Re-recordAnswerButton,
+  .stopButton {
+    width: 20%; /* Adjust button width */
+    height: 45px; /* Increase button height slightly */
+    margin-top: 10px; /* Reduce top margin */
+    font-size: 14px; /* Adjust font size */
+  }
+  .numberIcon{
+    font-size: 30px;
+  }
+  .responsiveBtnTxt {
+    font-size: calc(1vw + 1vh);
+  }
+}
+
+@media (max-width: 480px) {
+  .interview-div{
+    width:100%;
+  }
+  .videoDisplay-div,
+  .questionDisplay-div,
+  .answerDisplay-div,
+  .questionNumber-div,
+  .buttonDisplay-div {
+    width: 100%; /* Use full width */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .answerDisplay-div {
+    min-height: 10vh;
+    max-height: auto; /* Allow height to adjust */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .buttonDisplay-div {
+    flex-direction: row; /* Keep buttons in a row */
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+    justify-content: space-around; /* Add space around buttons */
+    gap: 5px; /* Add space between buttons */
+    padding: 10px 0; /* Add padding for spacing */
+  }
+
+  .SubmitButton,
+  .skipButton,
+  .nextButton,
+  .Re-recordAnswerButton,
+  .stopButton {
+    width: 25%; /* Reduce button width */
+    height: 50px; /* Increase button height */
+    font-size: 13px; /* Adjust font size */
+  }
+  .numberIcon{
+    font-size: 20px;
+  }
+}
