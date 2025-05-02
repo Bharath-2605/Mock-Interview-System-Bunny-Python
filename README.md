@@ -1,4 +1,4 @@
-##  Alt Text" style="width:27px;" /> Mock Interview System
+##  Mock Interview System
 
 ## Visit at https://mock-interview-system-python.vercel.app/
 
